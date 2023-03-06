@@ -37,3 +37,5 @@ The instalation process described in this README file is untested. I believe tha
 The selected API does not require authentication, so no authentication process is available in the code. No account is needed to access the API information.
 
 The exceptions need further development.
+
+Possibly there are code changes that were unnecessary. A review of all the custom files is advised if further development is implemented. 
