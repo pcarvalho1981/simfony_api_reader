@@ -1,0 +1,19 @@
+{% if showImages %}
+    <div>
+        <a href="/">Back to Homepage</a>
+    </div>
+    <div>
+        {% for image in images %}
+            <img src={{ image }} width="500" height="600">
+        {% endfor %}
+    </div>
+    <div>
+        <a href="/">Back to Homepage</a>
+    </div>
+{% else %}
+    <ul>
+        {% for breed in breeds %}
+            <li><a href="/{{ breed }}">{{ breed }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
