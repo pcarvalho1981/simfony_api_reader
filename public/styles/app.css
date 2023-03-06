@@ -1,0 +1,117 @@
+gradient(a, b, c)
+	background b
+	background linear-gradient(a, b, c)
+	
+flex(a, b)
+	display flex
+	align-items a
+	justify-content b
+
+font()
+	font-family 'Montserrat', sans-serif
+	
+primary = #2980b9
+secondary = #2c3e50
+	
+html
+	flex(center, center)
+	min-height 100vh
+	body
+		margin 0
+		gradient(to right, primary, secondary)
+		font()
+
+.heading
+	color white
+	text-align center
+	h1
+		margin-bottom 3rem
+		font-weight 300
+		position relative
+		&:after 
+			content ''
+			height 2px
+			width 2rem
+			position absolute
+			left 50%
+			bottom -1rem
+			transform translateX(-50%)
+			background-color white
+			
+.container
+	background-color white
+	padding 2rem
+	box-shadow 4px 4px 8px rgba(0,0,0,0.1)
+	.nav
+		background-color #fafafa
+		flex(center, center)
+		padding 1rem
+		margin 0 -3rem 2rem
+		box-shadow 2px 2px 4px rgba(0,0,0,0.1)
+		position relative
+		&:before, &:after
+			content ''
+			height 0
+			width 0
+			position absolute
+			top 0
+			border 0.75rem solid transparent
+			border-bottom 0.75rem solid #f2f0f0
+			transform-origin center
+			box-shadow 2px 2px 4px rgba(0,0,0,0.1)
+			z-index -1
+		&:before
+			left 0
+			transform translateY(-0.45rem) rotate(135deg) translateX(-0.4rem)
+		&:after
+			right 0
+			transform translateY(-0.45rem) rotate(-135deg) translateX(0.4rem)
+		a
+			display inline-block
+			margin 0 3rem
+			font-size 2rem
+			color primary
+			opacity 0.7
+			transition 0.25s
+			&:hover
+				opacity 1
+	.list
+		.num
+			padding 0.5rem 2rem
+			flex(center, flex-start)
+			transition 0.25s
+			for val, i in (1..10)
+				&:nth-child({i})
+					&:before
+						content '' + i + ''
+						font-size 4rem
+						font-weight bold
+						color black
+						width 2rem
+						opacity 0.05
+						transition 0.25s
+			h3
+				position relative
+				left -1.5rem
+				color #3d3d3d
+				font-size 0.85rem
+				transition 0.25s
+			&:hover
+				background-color #fafafa
+				cursor pointer
+				&:before
+					opacity 0.2
+				h3
+					left 1rem
+					
+.message
+	color white
+	text-align center
+	text-transform uppercase
+	margin-top 2rem
+
+.title
+	color white
+	text-align center
+	text-transform uppercase
+	margin-top 2rem
