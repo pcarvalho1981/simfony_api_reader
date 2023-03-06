@@ -31,6 +31,9 @@ Quick Notes
 -----------
 
 This is a very simple project, so it doesn't require no database. Therefore, migrations won't be needed to test the application, and `.env` file needs no changes.
+
 The instalation process described in this README file is untested. I believe that it's correct, but there might be an ocasional error and/or missing step(s).
+
 The selected API does not require authentication, so no authentication process is available in the code. No account is needed to access the API information.
+
 The exceptions need further development.
