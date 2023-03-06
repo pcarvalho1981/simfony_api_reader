@@ -22,6 +22,7 @@ class BreedsController extends AbstractController
 
             $response = $client->request('GET', 'https://dog.ceo/api/breed/' . $breed . '/images');
             
+            // Further Exceptions Treatment Required
             if ($response->getStatusCode() == 404) {
                 throw new NotFoundHttpException('Sorry! Breed not found!');
             }
