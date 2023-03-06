@@ -38,8 +38,9 @@ class BreedsController extends AbstractController
         }
         
         return $this->render('index.html.twig', [
-            'breeds' => $breeds,
-            'images' => $images,
+            'breeds'     => $breeds,
+            'breed'      => $breed,
+            'images'     => $images,
             'showImages' => $showImages
         ]);
     }
