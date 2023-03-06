@@ -38,4 +38,6 @@ The selected API does not require authentication, so no authentication process i
 
 The exceptions need further development.
 
-Possibly there are code changes that were unnecessary. A review of all the custom files is advised if further development is implemented. 
+Possibly there are code changes that were unnecessary. A review of all the custom files is advised if further development is implemented.
+
+No user input was created (lack of time for the challenge made me forget some of the required parameters). Sorry about that.
